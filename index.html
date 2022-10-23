@@ -289,7 +289,7 @@ table {border-collapse: collapse;width: 100%;}
 </legend>
 <label for="user-name">Введите имя</label>
 <!-- input type text для того,чтобы появилось окошко под ввод текста -->
-<input id="user-name" type="text" placeholder="Например, Екатерина" required maxlength="7" minlength="3" autocomplete="on" autofocus disabled > 
+<input id="user-name" type="text" placeholder="Например, Екатерина" required maxlength="7" minlength="3" autocomplete="on" autofocus > <br> 
 <!-- placeholder подсказка внутри поля ввода -->
 <!-- required обязательное к заполнению поле т.е. если пользователь не заполняет это поле, то форма не отправляется -->
 <!-- maxlength максимальное кол-во символов 
@@ -297,6 +297,61 @@ minlength минимальное кол-во символов-->
 <!-- autocomplete для возможности автоматического заполнения формы -->
 <!-- Autofocus припопадаии на эту страницу- поле с автофокусом сразу подсвечивается -->
 <!-- disabled ограничесние доступа для ввода в данное поле  -->
+<!-- value='Anastasia' значение по умолчанию,форма будет заполнена так -->
+
+<label for="#">Введите номер телефона</label> 
+<input type="tel"placeholder="+7 999 999 99 99"><br>
+<!-- input type='tel' т.е. в поле вводят номер телефона -->
+<!-- pattern="#" работает не во всех браузерах, определенный шаблон ввода телефона, можно нагуглить в инете-->
+
+<label for="#">Введите email</label>
+<input type="email"  required placeholder="ivanovivan111@gmail.com"><br>
+<!-- input type='email' для импута имэйла, без его ввода форма не отправится -->
+
+<label for="#">Ваше любимое блюдо:</label><br>
+<!-- checkbox клеточка с выбором, для написания своих вариантов, можно выбирать несколько  -->
+
+<input id="pizza" type="checkbox" name="food">
+<label for="pizza">Пицца</label>
+
+<input id="carrot pie" type="checkbox" name="food" >
+<label for="carrot pie">Морсковный пирог</label>
+
+<input id="crisps" type="checkbox" name="food">
+<label for="crisps">Чипсы</label>
+
+<input id="ice-cream" type="checkbox" name="food">
+<label for="ice-cream">Мороженое</label> <br>
+<!--ДЛя того,чтобы было понятно что все элементы относятся к выбору еды, нужно чтобы у всех стоял атрибут name  -->
+
+ <!-- type='radio' тогда квадратик изменится на круг,можно выбрать только 1 из элементов -->
+<label for="#"> Ваш любимый цвет:</label> <br>
+<input id="purple" type="radio" name="colour">
+<label for="purple">Фиолетовый</label>
+<input id="white" type="radio" name="colour">
+<label for="white">Белый</label>
+<input id="black" type="radio" name="colour">
+<label for="black">Черный</label><br>
+
+<label for="#">Дата вашего рождения</label>
+<input type="data"><br>
+<!-- Data дпустим когда в опроснике нужно выбрать дату родения(р/б не во всех браузерах) -->
+
+<label for="#">Вложения</label>
+<input multiple type="fail"><br>
+<!-- file чтобы можно было добавить файл -->
+<!-- атрибут mnltiple позволяет прикрепить можество файлов -->
+
+<label for="#">Пароль</label>
+<input type="password">
+<!-- password для введения пароля,будет закрываться звездочками -->
+
+<input type="submit" value="Послать">
+<!-- input type="submit"  для того , чтобы появилась кнопка "Отправить". можно изменить слово отправить на другое, придав value-->
+<input type="reset">
+<!-- reset для кнопки сброса анкеты -->
+
+
 </fieldset>
 
 <fieldset> 
