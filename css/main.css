@@ -121,3 +121,6 @@ ul li:first-child {
 ul li:last-child {
     background-color: darkorchid ;
 }
+
+/* Селекторы псевдо элементов, пишутся через 2 двоеточия :: */
+/* li::before или after значит что-то будет стоять до или после пункта*/
